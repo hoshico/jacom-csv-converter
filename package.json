@@ -6,7 +6,6 @@
   "scripts": {
     "convert": "NODE_OPTIONS=--max-old-space-size=8192 tsx csv/csv_to_coreda_data.ts",
     "wordpress-to-coreda": "tsx wordpress/wordpress_to_coreda_data.ts",
-    "new": "tsx csv/new_csv_converter.ts",
     "merge": "tsx csv/merge/csv_merger.ts"
   },
   "keywords": [],
