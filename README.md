@@ -1,10 +1,7 @@
 # JACOM CSV Converter
 
-PowerCMSからダウンロードしたCSVデータをCoreData形式に変換するためのツールです。
+PowerCMSからダウンロードしたCSVデータをCoreda用に変換するためのツールです。
 
-## 概要
-
-このプロジェクトは、農協時報（JACOM）のPowerCMSからエクスポートしたCSVデータを、CoreData形式のCSVファイルに変換するためのNode.jsアプリケーションです。
 
 ## 機能
 
