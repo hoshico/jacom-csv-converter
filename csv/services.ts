@@ -1325,7 +1325,7 @@ export const createContentFromCSVForHR = (
   console.log("contentSettingId:", contentSettingId);
 
   const dataRows = readCsvFile(
-    getFilePath(INPUT_CSV_DIR, "content_humanresouces.csv")
+    getFilePath(INPUT_CSV_DIR, "content_humanresources.csv")
   );
   console.log("CSV行数:", dataRows.length);
 

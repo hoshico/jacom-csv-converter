@@ -610,7 +610,7 @@ class CSVMerger {
       'サムネイル', '記事本文へのサムネイル表示について', '概要', '内容', 'ページ', 'ファイル名'
     ];
     
-    // content_humanresouces.csv用のヘッダー
+    // content_humanresources.csv用のヘッダー
     const humanResourceHeaders = [
       'ID', 'タイトル', '公開日', 'カテゴリ', 'トピック', '人事区分', 'JA名', '人事異動の発効日', 
       '都道府県', '全国連人事', 'サムネイル', '記事本文へのサムネイル表示について', '概要', '内容', 'ページ'
@@ -623,8 +623,8 @@ class CSVMerger {
     const pestOutputFile = this.config.outputFile.replace('content_articles.csv', 'content_pestinfos.csv');
     await this.writePestCSVFile(pestData, pestHeaders, pestOutputFile);
     
-    // content_humanresouces.csvの出力
-    const humanResourceOutputFile = this.config.outputFile.replace('content_articles.csv', 'content_humanresouces.csv');
+    // content_humanresources.csvの出力
+    const humanResourceOutputFile = this.config.outputFile.replace('content_articles.csv', 'content_humanresources.csv');
     await this.writeHumanResourceCSVFile(humanResourceData, humanResourceHeaders, humanResourceOutputFile);
   }
 
@@ -713,7 +713,7 @@ class CSVMerger {
   }
 
   /**
-   * content_humanresouces.csv用のCSVファイルを出力するヘルパーメソッド
+   * content_humanresources.csv用のCSVファイルを出力するヘルパーメソッド
    */
   private async writeHumanResourceCSVFile(data: OutputCSVRow[], headers: string[], outputFile: string): Promise<void> {
     const csvContent = [headers.join(',')];
